@@ -16,18 +16,77 @@ h3{
   transition: 0.2s ease;
 }
 
+.main{
+  margin: 20px 0px;
+  display: flex;
+}
+
 .selectedItem{
   background-color: black;
   color: white;
 }
 
 .levelBox{
-  background-color: lightgrey;
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .skillItem{
   background-color: lightgray;
+  padding: 7px 13px;
+  cursor: pointer;
+}
+
+.selectedSkillItem{
+  background-color: black;
+  color: white;
+  padding: 7px 13px;
+  cursor: pointer;
+}
+
+.skillItem:hover{
+  background-color: gray;
+  color:white;
+}
+
+.heading{
+  width: 20%;
+}
+
+.btn{
+  color:white;
+  background: #00042880;
+  padding:6px 12px;
+  font-size: 16px;
+  display:flex;
+  align-self: flex-start;
+  outline: none;
+}
+
+@media screen and (max-width: 850px){
+  .main{
+    flex-direction: column;
+  }
+
+  .levelBox{
+    margin: 20px 0px;
+    border-radius: 0px;
+  }
+
+  .skillItem{
+    margin: 2px;
+    border-radius: 5px;
+  }
+
+  .selectedSkillItem{
+    margin: 2px;
+    border-radius: 5px;
+  }
+
+  .heading{
+    width: 50%;
+  }
 }

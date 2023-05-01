@@ -28,7 +28,7 @@ export default function MultiSelect({ selected, setSelected, items }) {
     return (
         <div style={mainBox}>
             <div onClick={() => setShowOptions(!showOptions)} style={header} >
-                <div style={{ width: '180px', overflow: 'hidden' }}>
+                <div style={{ width: '190px', overflow: 'hidden' }}>
                     {selected.length >= 3 ? `${selected.length} items selected` :
                         selected.length > 0 ? selected.toString() : 'Choose'}
                 </div>
@@ -63,7 +63,7 @@ export default function MultiSelect({ selected, setSelected, items }) {
 
 //Styling
 const mainBox = {
-    width: '210px'
+    width: '220px'
 }
 const header = {
     background: 'black',
